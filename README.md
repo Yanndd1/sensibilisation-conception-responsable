@@ -103,8 +103,8 @@ Le projet suit une arborescence de fichiers simple et logique pour faciliter la 
 └── assets/
     └── css/
         └── style.css
-```text
----
+```
+
 
 ## 🤝 Contribution
 
