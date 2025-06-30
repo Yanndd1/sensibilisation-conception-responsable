@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnes Pratiques pour l'UX Design - Conception Responsable</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
+            <ul class="nav-links">
+                <li><a href="../impacts/impacts.html">Impacts</a></li>
+                <li><a href="../principes/definition.html">Principes</a></li>
+                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
+                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Accueil</a> &gt; 
+        <a href="index.html">Bonnes Pratiques</a> &gt; 
+        UX Design
+    </div>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Bonnes Pratiques pour l'UX Design</h1>
+        </section>
+
+        <section>
+            <p>L'UX Designer joue un rôle crucial en écoconception. Un parcours utilisateur simple et efficace est par nature moins consommateur de ressources, car il réduit le nombre d'actions, de pages vues et de temps passé à chercher l'information.</p>
+        </section>
+
+        <section>
+            <h2>Axe 1 : Simplifier et optimiser les parcours</h2>
+            <h3>Le constat :</h3>
+            <p>Des parcours complexes et longs forcent les utilisateurs à charger plus de pages et à effectuer plus d'actions, ce qui consomme inutilement des ressources serveur et client.</p>
+            <h3>L'objectif :</h3>
+            <p>Permettre à l'utilisateur d'atteindre son but le plus rapidement et avec le moins d'étapes possible.</p>
+            
+            <h4>Exemple : Le parcours de candidature</h4>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+                <div style="flex: 1; min-width: 300px; border: 2px solid #10b981; padding: 1rem; border-radius: 8px;">
+                    <h5 style="color: #10b981;">✔️ Parcours optimisé</h5>
+                    <p>La candidature simplifiée permet de postuler directement, sans quitter le site. Le parcours est court et fluide.</p>
+                    <img src="../assets/images/indeed.png" alt="Exemple de parcours de candidature simple sur Indeed" style="width: 100%; margin-top: 1rem; border-radius: 4px;">
+                </div>
+                <div style="flex: 1; min-width: 300px; border: 2px solid #ef4444; padding: 1rem; border-radius: 8px;">
+                    <h5 style="color: #ef4444;">❌ Parcours complexe</h5>
+                    <p>Ici, l'utilisateur est redirigé vers le site de l'entreprise, ce qui ajoute des étapes et un temps de chargement supplémentaire.</p>
+                    <img src="../assets/images/apec.png" alt="Exemple de parcours de candidature complexe sur APEC" style="width: 100%; margin-top: 1rem; border-radius: 4px;">
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Comment faire ?</h3>
+            <ul>
+                <li><strong>Identifier les parcours critiques :</strong> Utiliser les données analytiques pour cibler les 20% de parcours qui concentrent 80% du trafic et les optimiser en priorité.</li>
+                <li><strong>Réduire le nombre d'étapes :</strong> Analyser chaque étape d'un parcours en se demandant si elle est indispensable. Peut-on regrouper des actions ? Peut-on supprimer un clic ?</li>
+                <li><strong>Faciliter la recherche :</strong> Implémenter un moteur de recherche interne performant et pertinent pour permettre un accès direct à l'information.</li>
+                <li><strong>Anticiper les besoins :</strong> Proposer des contenus ou des actions contextuelles pour éviter à l'utilisateur de naviguer inutilement.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Axe 2 : Guider l'utilisateur pour éviter les erreurs</h2>
+            <h3>Le constat :</h3>
+            <p>Les erreurs de saisie ou de navigation génèrent des allers-retours frustrants pour l'utilisateur et coûteux en ressources (nouvelles requêtes, rechargement de pages).</p>
+            <h3>L'objectif :</h3>
+            <p>Concevoir des interfaces qui préviennent les erreurs et guident l'utilisateur de manière claire.</p>
+            <h3>Comment faire ?</h3>
+            <ul>
+                <li><strong>Validation en temps réel :</strong> Valider les champs de formulaire au fur et à mesure de la saisie pour donner un feedback immédiat, plutôt que d'attendre la soumission.</li>
+                <li><strong>Messages d'erreur clairs :</strong> Rédiger des messages qui expliquent clairement le problème et la manière de le résoudre.</li>
+                <li><strong>Tests utilisateurs :</strong> Organiser des tests pour identifier les points de friction, les incompréhensions et les "cas d'échec" dans les parcours.</li>
+                <li><strong>Utiliser l'autocomplétion :</strong> Proposer des suggestions pour les champs de recherche, les adresses, etc., pour accélérer la saisie et réduire les erreurs.</li>
+            </ul>
+        </section>
+
+        <section class="references">
+            <h3>Sources</h3>
+            <ul>
+                <li>Référentiel Général d'Écoconception de Services Numériques (RGESN)</li>
+                <li>Checklist "Design éthique & durable"</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Conception Responsable de Service Numérique</p>
+        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    </footer>
+</body>
+</html>

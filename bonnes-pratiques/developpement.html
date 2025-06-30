@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnes Pratiques pour le Développement - Conception Responsable</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
+            <ul class="nav-links">
+                <li><a href="../impacts/impacts.html">Impacts</a></li>
+                <li><a href="../principes/definition.html">Principes</a></li>
+                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
+                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Accueil</a> &gt; 
+        <a href="index.html">Bonnes Pratiques</a> &gt; 
+        Développement
+    </div>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Bonnes Pratiques pour le Développement</h1>
+        </section>
+
+        <section>
+            <p>Le développeur est au cœur de la mise en œuvre technique de l'écoconception. La qualité, la pertinence et l'efficacité du code ont un impact direct sur la consommation de ressources côté serveur et côté client.</p>
+        </section>
+
+        <section>
+            <h2>Axe 1 : Optimiser le code Front-End</h2>
+            <h3>Le constat :</h3>
+            <p>Un code Front-End lourd et non optimisé ralentit l'affichage, augmente la consommation de batterie et rend le service inutilisable sur des terminaux anciens ou des connexions faibles.</p>
+            <h3>L'objectif :</h3>
+            <p>Envoyer au navigateur le strict minimum de code (HTML, CSS, JS) et s'assurer qu'il est exécuté de la manière la plus efficace possible.</p>
+            <h3>Comment faire ?</h3>
+            <ul>
+                <li><strong>Limiter les dépendances :</strong> Questionner la nécessité de chaque librairie ou framework. Un framework lourd est-il justifié pour un site simple ?</li>
+                <li><strong>Minifier et compresser :</strong> Minifier les fichiers CSS et JavaScript et activer la compression (Gzip, Brotli) sur le serveur.</li>
+                <li><strong>Optimiser le chemin de rendu critique :</strong> Charger en priorité le CSS nécessaire à l'affichage de la partie visible de la page ("above the fold").</li>
+                <li><strong>Utiliser le "lazy loading" :</strong> Ne charger les images, iframes et vidéos que lorsqu'elles deviennent visibles à l'écran.</li>
+                <li><strong>Écrire un code JS efficient :</strong> Éviter les calculs complexes dans les boucles, limiter les manipulations du DOM.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Axe 2 : Optimiser le code Back-End</h2>
+            <h3>Le constat :</h3>
+            <p>Le code Back-End est responsable de la consommation des serveurs. Des requêtes BDD non optimisées, des algorithmes complexes et des traitements inutiles surchargent l'infrastructure.</p>
+            <h3>L'objectif :</h3>
+            <p>Minimiser le temps de calcul et les ressources serveur pour chaque requête utilisateur.</p>
+            <h3>Comment faire ?</h3>
+            <ul>
+                <li><strong>Optimiser les requêtes à la base de données :</strong> Sélectionner uniquement les champs nécessaires (pas de `SELECT *`), utiliser des index, éviter les requêtes N+1.</li>
+                <li><strong>Mettre en place une stratégie de cache :</strong> Mettre en cache les résultats des requêtes fréquentes pour ne pas les recalculer à chaque fois (cache applicatif, cache de base de données).</li>
+                <li><strong>Choisir le bon langage/framework :</strong> Pour des traitements intensifs, certains langages sont nativement plus performants et moins consommateurs que d'autres.</li>
+                <li><strong>Adopter l'asynchrone :</strong> Pour les tâches longues (envoi d'email, traitement de fichiers), utiliser des files d'attente (message queues) pour ne pas bloquer la réponse à l'utilisateur.</li>
+            </ul>
+        </section>
+
+        <section class="references">
+            <h3>Sources</h3>
+            <ul>
+                <li>Référentiel Général d'Écoconception de Services Numériques (RGESN)</li>
+                <li>GreenIT-Analysis (outil d'analyse et de bonnes pratiques)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Conception Responsable de Service Numérique</p>
+        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnes Pratiques pour l'Architecture - Conception Responsable</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
+            <ul class="nav-links">
+                <li><a href="../impacts/impacts.html">Impacts</a></li>
+                <li><a href="../principes/definition.html">Principes</a></li>
+                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
+                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="breadcrumb">
+        <a href="../index.html">Accueil</a> &gt; 
+        <a href="index.html">Bonnes Pratiques</a> &gt; 
+        Architecture
+    </div>
+    <main class="container">
+        <section class="hero-section">
+            <h1>Bonnes Pratiques pour l'Architecture</h1>
+        </section>
+        <section>
+            <p>La prise en compte de l'écoconception dans l'architecture repose sur deux piliers : optimiser les échanges et le stockage de données et rationnaliser et rallonger la durée de vie de l’infrastructure matérielle.</p>
+        </section>
+        <section>
+            <h2>Axe&nbsp;1&nbsp;: Optimiser les échanges et le stockage de données</h2>
+            <h3>Le constat&nbsp;:</h3>
+            <p>Les transferts et le stockage excessifs de données augmentent les consommations énergétiques liées aux serveurs et aux réseaux.</p>
+            <h3>L'objectif&nbsp;:</h3>
+            <p>Minimiser le volume de données stockées et transférées sur le réseau.</p>
+            <h3>Comment faire&nbsp;?</h3>
+            <ul>
+                <li>Stocker le minimum de données possibles.</li>
+                <li>Optimiser les données stockées (nettoyage, compression).</li>
+                <li>Ne pas dupliquer les données (utilisation de référentiels).</li>
+                <li>Ne pas stocker les données qui peuvent être recréées.</li>
+                <li>Optimiser les appels (GraphQL, requêtes ciblées).</li>
+                <li>Utiliser des formats de données adaptés et efficients.</li>
+                <li>Privilégier HTTP/2 ou HTTP/3 pour les transferts.</li>
+                <li>Compresser les données transférées (gzip, brotli).</li>
+                <li>Adopter une politique de mise en cache efficace.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Axe&nbsp;2&nbsp;: Rationnaliser et rallonger la durée de vie de l’infrastructure matérielle</h2>
+            <h3>Le constat&nbsp;:</h3>
+            <p>La fabrication et le remplacement prématuré de matériel génèrent une empreinte carbone significative.</p>
+            <h3>L'objectif&nbsp;:</h3>
+            <p>Maximiser la longévité des équipements et réduire la fréquence de remplacement.</p>
+            <h3>Comment faire&nbsp;?</h3>
+            <ul>
+                <li>Entretenir et réparer les équipements plutôt que de les remplacer.</li>
+                <li>Mutualiser les ressources via la virtualisation et le cloud partagé.</li>
+                <li>Choisir des composants modulaires et évolutifs.</li>
+                <li>Réemployer et recycler le matériel en fin de vie.</li>
+                <li>Mise en place de solutions éco-responsables de stockage (certification énergies renouvelables, datacenters verts).</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©&nbsp;2024&nbsp;- Conception Responsable de Service Numérique</p>
+        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    </footer>
+</body>
+</html>
