@@ -36,6 +36,43 @@ Aucune installation complexe n'est requise. Le site est entièrement statique (H
 ## 📂 Structure du projet
 
 Le projet suit une arborescence de fichiers simple et logique pour faciliter la navigation et les contributions.
+Absolument. Voici une proposition de fichier README.md complet pour votre projet GitHub. Il explique le but du projet, comment l'utiliser et comment y contribuer.
+
+Vous pouvez copier-coller ce contenu directement dans un nouveau fichier nommé README.md à la racine de votre dépôt.
+
+Sensibilisation à la Conception Responsable de Service Numérique
+Ce dépôt contient le code source d'un site web statique de sensibilisation à la conception responsable de services numériques. L'objectif est de fournir une ressource pédagogique, simple et accessible pour comprendre les enjeux et les bonnes pratiques liés à la réduction de l'empreinte environnementale et sociale du numérique.
+
+Ce projet est destiné à être partagé librement et amélioré par la communauté.
+
+🌍 À propos du site
+Le site est structuré en plusieurs sections clés pour guider l'utilisateur, du pourquoi au comment :
+
+Impacts du Numérique : Une vue d'ensemble des conséquences environnementales (consommation de ressources, GES) et sociales (fracture numérique, accessibilité) de la technologie.
+
+Principes de l'Écoconception : La définition des concepts fondamentaux comme la frugalité, la pertinence et la durabilité, ainsi que les bénéfices associés.
+
+Bonnes Pratiques par Métier : Des fiches pratiques et actionnables pour chaque rôle de l'équipe produit (Stratégie, UX, UI, Développement, Architecture).
+
+Mise en Œuvre : Un guide pour lancer une démarche d'écoconception et une liste d'outils et de ressources pour aller plus loin.
+
+🚀 Utilisation
+Aucune installation complexe n'est requise. Le site est entièrement statique (HTML/CSS).
+
+Clonez le dépôt sur votre machine locale :
+
+Bash
+
+git clone https://github.com/votre-nom-utilisateur/votre-nom-du-depot.git
+Naviguez dans le dossier du projet :
+
+Bash
+
+cd votre-nom-du-depot
+Ouvrez le fichier index.html directement dans votre navigateur web.
+
+📂 Structure du projet
+Le projet suit une arborescence de fichiers simple et logique pour faciliter la navigation et les contributions.
 
 /
 │
